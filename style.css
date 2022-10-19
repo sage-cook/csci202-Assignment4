@@ -1,13 +1,15 @@
 body{
 	margin: 0;
 	width: 100%;
-	background: skyblue;
+	background: black;
 	background-image: url("pleasant_background.svg");
-	background-size: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
 	/* background-attachment: fixed; */
 	/* background-origin: content-box; */
 	overflow: hidden;
 	position: absolute;
+	height: 100%;
 }
 
 #face {
@@ -21,18 +23,19 @@ body{
 }
 
 div {
-	position: fixed;
-	height: 50px;
-	width: 100%;
+	position: absolute;
+	height: 100px;
+	width: 110%;
 	background: black;
+	left: -5%;
 }
 
 #topbar {
-	top: 0;
+	top: -50px;
 }
 
 #bottombar {
-	bottom: 0;
+	bottom: -50px;
 }
 
 #spin-button {
