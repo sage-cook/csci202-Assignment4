@@ -1,0 +1,92 @@
+body{
+	margin: 0;
+	width: 100%;
+	background: skyblue;
+	background-image: url("pleasant_background.svg");
+	background-size: 100%;
+	/* background-attachment: fixed; */
+	/* background-origin: content-box; */
+	overflow: hidden;
+	position: absolute;
+}
+
+#face {
+	height: 256px;
+	width: 256px;
+	display: block;
+	font-size: 50px;
+	margin: auto;
+	margin-top:120px;
+	margin-bottom:50px;
+}
+
+div {
+	position: fixed;
+	height: 50px;
+	width: 100%;
+	background: black;
+}
+
+#topbar {
+	top: 0;
+}
+
+#bottombar {
+	bottom: 0;
+}
+
+#spin-button {
+	margin: auto;
+	display: block;
+	width: 192px;
+	height: 108px;
+	background: #0000ff;
+	color: white;
+	border: none;
+	font-family: Impact, sans-serif;
+	font-size: 32px;
+	border-radius: 5px;
+	transition-property: width, height, background;
+	transition-duration: 0.05s;
+}
+
+#spin-button:hover {
+	background: #4444ff;
+}
+
+#spin-button:active {
+	background: #8888ff;
+	width: 186px;
+	height: 104px;
+}
+
+#spin-button:disabled {
+	background: #664466;
+	color: black;
+}
+
+#boom {
+	visibility: hidden;
+	position: absolute;
+	width: 80%;
+	height: 700px;
+	top: 0;
+	margin: auto;
+	left: 0;
+	right: 0;
+	
+}
+
+#shame {
+	position: absolute;
+	text-align: center;
+	margin: auto;
+	left: 0;
+	right: 0;
+	top: 150px;
+	color: red;
+	font-family: Georgia, serif;
+	font-size: 72px;
+	opacity: 0;
+	transition-duration: 2.5s;
+}
